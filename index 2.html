@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>منصة البحوث الجامعية</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>منصة البحوث الجامعية - جامعة نواكشوط العصرية</h1>
+        <form id="researchForm">
+            <label>عنوان البحث:</label>
+            <input type="text" id="title" required><br>
+            <label>رقم المجموعة:</label>
+            <input type="text" id="group" required><br>
+            <label>أسماء الطلبة (كل اسم في سطر):</label>
+            <textarea id="students" required></textarea><br>
+            <label>اسم الدكتور:</label>
+            <input type="text" id="supervisor" required><br>
+            <label>نص البحث:</label>
+            <textarea id="researchText" required></textarea><br>
+            <button type="button" onclick="generateResearch()">توليد البحث</button>
+            <button type="button" onclick="downloadPDF()">تحميل PDF</button>
+        </form>
+        <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

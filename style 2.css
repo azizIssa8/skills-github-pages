@@ -1,0 +1,32 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    direction: rtl;
+    text-align: right;
+}
+.container {
+    background: white;
+    margin: 2em auto;
+    padding: 2em;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+textarea, input {
+    width: 100%;
+    margin: 0.5em 0;
+}
+button {
+    padding: 0.5em 2em;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#output {
+    margin-top: 2em;
+    padding: 1em;
+    background: #e9ecef;
+    border-radius: 10px;
+}
